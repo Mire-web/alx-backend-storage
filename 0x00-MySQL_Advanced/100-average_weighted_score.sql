@@ -1,5 +1,5 @@
 -- Compute a user's weighted average score
-
+DROP PROCEDURE IF EXISTS ComputeAverageWeightedScoreForUser;
 
 DELIMITER $$
 CREATE PROCEDURE ComputeAverageWeightedScoreForUser(IN user_id INT)
