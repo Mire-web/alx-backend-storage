@@ -7,4 +7,4 @@ import pymongo
 
 def update_topics(collection, name, topics):
     """Update Topics in school"""
-    collection.update_many({name: name}, {topics: topics})
+    collection.update_one({name: name}, {topics: topics})
