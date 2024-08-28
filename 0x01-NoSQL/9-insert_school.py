@@ -3,10 +3,9 @@
 Insert a new school in a collection
 """
 import pymongo
-from pymongo.results import InsertOneResult
 
 
-def insert_school(collection: pymongo, **kwargs: dict) -> InsertOneResult:
+def insert_school(collection, **kwargs):
     """Merge keywords and insert new object"""
     new_school_obj = {}
     for key, value in **kwargs:
