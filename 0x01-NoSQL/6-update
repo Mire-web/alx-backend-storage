@@ -1,3 +1,4 @@
 // Add new attribute to documents having name = holberton in collection school
 
 db.school.updateMany({name: "Holberton school"}, {$set: {address: "972 Mission street"}})
+db.school.find({name: "Holberton school"})
