@@ -8,4 +8,4 @@ import pymongo
 def update_topics(mongo_collection, name, topics):
     """Update all Topics in a school document"""
     return mongo_collection.update_many({"name": name},
-                                        {$set: {"topics": topics}})
+                                        {"$set": {"topics": topics}})
